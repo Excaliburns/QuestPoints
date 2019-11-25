@@ -1,9 +1,7 @@
-package us.tut.questpoints.commands;
+package us.tut.questpoints.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.FileConfigurationOptions;
-import us.tut.questpoints.QuestPoints;
 
 import java.sql.*;
 import java.util.logging.Logger;

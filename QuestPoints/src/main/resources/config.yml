@@ -1,5 +1,7 @@
 qp-host: localhost
-qp-port: 3308
+qp-port: 3306
 qp-db: QuestPoints
 qp-user: QuestPointsUser
 qp-pass: 123
+qp-table: points_users
+update-time: 10

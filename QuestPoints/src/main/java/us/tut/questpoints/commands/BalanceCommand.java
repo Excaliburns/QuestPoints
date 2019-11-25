@@ -15,10 +15,18 @@ public class BalanceCommand implements CommandExecutor {
             Player player = (Player) commandSender;
 
             if(args.length == 0){
-                System.out.println(player.getUniqueId().toString().replaceAll("-", ""));
+
                 int points = QuestPoints.getLocalPoints().get(player.getUniqueId().toString().replaceAll("-", ""));
-                commandSender.sendMessage(ChatColor.GOLD + "QuestPoints: " + points);
+                commandSender.sendMessage(ChatColor.GOLD + "[QuestPoints] Balance: " + ChatColor.DARK_GREEN + points);
+
             }
+            else if(args[0].toLowerCase().equals("add") | args[0].toLowerCase().equals("remove")) {
+                new UpdatePoints(commandSender, command, args);
+            }
+            else{
+                player.sendMessage("Message is improperly formatted. Please use /qp add/remove [points] [player].");
+            }
+
         }
 
         return true;
