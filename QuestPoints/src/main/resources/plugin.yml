@@ -1,0 +1,7 @@
+name: QuestPoints
+version: 1.0.0
+author: tut
+main: us.tut.questpoints.QuestPoints
+commands:
+  qp:
+    description: Shows you your available quest points.
